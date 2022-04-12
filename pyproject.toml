@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "phe_bench"
+version = "0.1.0"
+description = ""
+authors = ["L.Lu <luliangce@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+phe = "^1.4.0"
+gmpy2 = "^2.1.2"
+py-cpuinfo = "^8.0.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.13.5"
+yapf = "^0.32.0"
+
+[[tool.poetry.source]]
+default = true
+url = "https://mirrors.ustc.edu.cn/pypi/web/simple"
+name= "ustc"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
